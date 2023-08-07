@@ -50,12 +50,19 @@ Output: ludba
 */
 
 // Code function di sini 
+function reverseString($kata) {
+    for ($y = strlen($kata) - 1; $y >= 0; $y--) {
+        echo $kata[$y];
+    }
+    echo "<br>";
+}
 
 
 // Hapus komentar di bawah ini untuk jalankan Code
-// reverseString("abduh");
-// reverseString("Bootcamp");
-// reverseString("We Are JCC Developers")
+
+ reverseString("abduh");
+ reverseString("Bootcamp");
+ reverseString("We Are JCC Developers");
 echo "<br>";
 
 echo "<h3>Soal No 3 Palindrome </h3>";
