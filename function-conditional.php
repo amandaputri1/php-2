@@ -82,12 +82,26 @@ NB: DILARANG menggunakan built-in function PHP seperti strrev() dll. Gunakan loo
 
 
 // Code function di sini
+function palindrome($string) {
+    $length = strlen($string);
+    $palindrome = true;
+
+    for ($i = 0; $i < $length / 2; $i++) {
+        if ($string[$i] !== $string[$length - $i - 1]) {
+            $palindrome = false;
+            break;
+        }
+    }
+
+    echo $palindrome ? "true" : "false";
+    echo "<br>";
+}
 
 // Hapus komentar di bawah ini untuk jalankan code
-// palindrome("civic") ; // true
-// palindrome("nababan") ; // true
-// palindrome("jambaban"); // false
-// palindrome("racecar"); // true
+ palindrome("civic") ; // true
+ palindrome("nababan") ; // true
+ palindrome("jambaban"); // false
+ palindrome("racecar"); // true
 
 
 echo "<h3>Soal No 4 Tentukan Nilai </h3>";
